@@ -16,15 +16,15 @@
     *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;user-select:none;}
     body{min-height:100vh;background:var(--bg);font-family:'Fredoka One','Comic Sans MS',cursive,sans-serif;overflow:hidden;position:relative;}
     .screen{display:none;width:100vw;height:100vh;position:absolute;top:0;left:0;flex-direction:column;align-items:center;justify-content:center;}
-  .screen.active {
+.screen.active {
   display: flex;
-  animation: screenFade .35s ease both;
+  animation: screenFade .8s ease both;
 }
 
 @keyframes screenFade {
   from {
     opacity: 0;
-    transform: translateY(12px) scale(.98);
+    transform: translateY(40px) scale(.92);
   }
   to {
     opacity: 1;
