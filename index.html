@@ -32,6 +32,12 @@
     .home-btns{display:grid;grid-template-columns:1fr 1fr;gap:13px;width:100%;max-width:380px;padding:0 16px;animation:popIn .6s .2s cubic-bezier(.34,1.56,.64,1) both;}
     .op-btn{height:140px;border:none;border-radius:26px;cursor:pointer;font-family:'Fredoka One',cursive;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-shadow:0 8px 0 rgba(0,0,0,0.16);transition:transform .1s,box-shadow .1s;position:relative;overflow:hidden;}
     .op-btn::after{content:'';position:absolute;top:-40%;left:-30%;width:60%;height:60%;background:rgba(255,255,255,.18);border-radius:50%;}
+   .op-btn:hover,
+.level-card:hover,
+.np:hover,
+.cmp-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
     .op-btn:active{transform:translateY(6px);box-shadow:0 2px 0 rgba(0,0,0,0.16);}
     .op-btn.add{background:linear-gradient(135deg,#FF6B6B,#FF3D3D);color:#fff;}
     .op-btn.sub{background:linear-gradient(135deg,#4D96FF,#1A73FF);color:#fff;}
