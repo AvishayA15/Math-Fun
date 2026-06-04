@@ -16,7 +16,21 @@
     *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;user-select:none;}
     body{min-height:100vh;background:var(--bg);font-family:'Fredoka One','Comic Sans MS',cursive,sans-serif;overflow:hidden;position:relative;}
     .screen{display:none;width:100vw;height:100vh;position:absolute;top:0;left:0;flex-direction:column;align-items:center;justify-content:center;}
-    .screen.active{display:flex;}
+  .screen.active {
+  display: flex;
+  animation: screenFade .35s ease both;
+}
+
+@keyframes screenFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
     /* HOME */
     #home{
