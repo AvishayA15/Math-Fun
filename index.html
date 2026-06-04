@@ -669,7 +669,13 @@ function checkAnswer(){
   const val=parseInt(answerStr,10), q=currentQ;
   if(val===q.missingVal){
     score++; correctSinceToken++;
-    document.getElementById('score-num').textContent=score;
+   document.getElementById('score-num').textContent=score;
+
+document.getElementById('score-num').classList.add('score-pop');
+
+setTimeout(() => {
+  document.getElementById('score-num').classList.remove('score-pop');
+}, 400);
     locked=true; document.getElementById('cursor').style.display='none';
     revealBlank(q,val);
     document.getElementById('answer-display').style.borderColor='var(--green)';
