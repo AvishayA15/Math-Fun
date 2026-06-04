@@ -666,6 +666,7 @@ function checkAnswer(){
     revealBlank(q,val);
     document.getElementById('answer-display').style.borderColor='var(--green)';
     document.getElementById('feedback-area').innerHTML=`<div class="fb-correct">${pick(RIGHT_MSGS)}</div>`;
+   spawnConfetti();
     if(correctSinceToken>=5){correctSinceToken=0;tokens++;document.getElementById('token-num').textContent=tokens;setTimeout(showTokenOverlay,900);}
     else setTimeout(nextQuestion,1800);
   }else{
